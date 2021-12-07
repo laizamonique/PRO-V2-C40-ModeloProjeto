@@ -60,15 +60,15 @@ class Game{
                          
                          fill("red");
                          textSize(20);
-                         // add code to display the player name on the respective basket
+                         //adicione o código para exibir o nome do jogador na respectiva cesta
 
                          
                      }
                     
                          textSize(25);
                          fill("white");
-                         text("Player 1 :" +allPlayers.player1.score,50,50);
-                        text("Player 2 :" + allPlayers.player2.score, 50, 100);
+                         text("Jogador 1: " +allPlayers.player1.score,50,50);
+                        text("Jogador 2: " + allPlayers.player2.score, 50, 100);
                  
                  }
                 
@@ -131,17 +131,17 @@ class Game{
 
     }
     showRank() {
-        alert("Awesome !! You finished the game! You rank is :" +player.rank)
+        alert("Incrível!! Você terminou o jogo! Sua classificação é:" +player.rank)
       }
 
 gameOver() {
     textSize(40)
     fill("white")
- text("GAME OVER",displayWidth/2-400,displayHeight/2-200)
+ text("FIM DE JOGO",displayWidth/2-400,displayHeight/2-200)
     }
     
     end(){
-       console.log("Game Ended");
+       console.log("O Jogo Terminou");
        console.log(player.rank)
        this.gameOver();
     }
